@@ -1,0 +1,9 @@
+<h2>Weather app</h2>
+<div>
+    <input type="text" [(ngModel)]="city" placeholder="Enter Name">
+    <button (click)="getWeather()">Get Weather</button>
+
+    <div *ngIf="weatherData">
+        <pre>{{ weatherData }}</pre>
+    </div>
+</div>
