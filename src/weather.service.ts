@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class WeatherService {
 
   constructor(private http: HttpClient) { }
-  private apiKey = 'ff57058d6b6a4c00bf3366155428a2fd';
+  private apiKey = 'your api key';
 
   getWeather(city: string) {
     const apiUrl = `https://api.weatherbit.io/v2.0/current/airquality?city=${city}&country=India&hours=13&key=${this.apiKey}`;
